@@ -72,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'job-sit.wsgi.application'
+WSGI_APPLICATION = 'jobboard.wsgi.application'
 
 
 # Database
@@ -135,7 +135,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'job-sit',
+        'NAME': 'jobsit',
         'USER': 'kamran493',
         'PASSWORD': 'X7lAqfabdCzBOdKLlmUnXHxYI30c53Af',
         'HOST': 'dpg-d0cottumcj7s73apvsl0-a.oregon-postgres.render.com',
