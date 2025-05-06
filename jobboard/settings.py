@@ -132,3 +132,15 @@ import os
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+import dj_database_url
+import os
+
+# تنظیم دیتابیس از متغیر محیطی
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+
+# فعال‌سازی whitenoise برای فایل‌های استاتیک
+MIDDLEWARE.insert(1, "whitenoise.middleware.WhiteNoiseMiddleware")
+
+# مسیر فایل‌های استاتیک
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
