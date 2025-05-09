@@ -1,1 +1,1 @@
-web: gunicorn job-sit.wsgi
+web: gunicorn jobboard.wsgi

@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-2zvj(zz+3b9q@r18yb%ldxba%)-6c+^h8qc6ss363)sa5yzm7g
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost'
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'job-sit.onrender.com']
 ]
 
 
@@ -72,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'job-sit.wsgi.application'
+WSGI_APPLICATION = 'job_sit.wsgi.application'
 
 
 # Database
@@ -80,8 +80,12 @@ WSGI_APPLICATION = 'job-sit.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'job_sit',
+        'USER': 'kamran493',
+        'PASSWORD': 'X7lAqfabdCzBOdKLlmUnXHxYI30c53Af',
+        'HOST': 'dpg-d0cottumcj7s73apvsl0-a.oregon-postgres.render.com',
+        'PORT': '5432',
     }
 }
 
@@ -135,7 +139,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'job-sit',
+        'NAME': 'job_sit',
         'USER': 'kamran493',
         'PASSWORD': 'X7lAqfabdCzBOdKLlmUnXHxYI30c53Af',
         'HOST': 'dpg-d0cottumcj7s73apvsl0-a.oregon-postgres.render.com',
