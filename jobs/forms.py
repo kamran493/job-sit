@@ -4,7 +4,7 @@ from .models import JobApplication
 class ApplicationForm(forms.ModelForm):
     class Meta:
         model = JobApplication
-        fields = ['name', 'email', 'phone', 'resume', 'cover_letter']
+        fields = ['name', 'email', 'phone', 'resume_file', 'cover_letter']
         widgets = {
             'cover_letter': forms.Textarea(attrs={'rows': 4}),
         }
