@@ -7,7 +7,7 @@ def home(request):
 
 def apply_job(request):
     if request.method == 'POST':
-        form = ApplicationForm(request.POST)
+        form = ApplicationForm(request.POST, request.FILES)  # اضافه کردن request.FILES
         if form.is_valid():
             form.save()
             messages.success(request, "درخواست شما با موفقیت ثبت شد. با تشکر!")
@@ -15,6 +15,7 @@ def apply_job(request):
     else:
         form = ApplicationForm()
     return render(request, 'jobs/apply.html', {'form': form})
+
 
 def thank_you(request):
     return render(request, 'jobs/thank_you.html')

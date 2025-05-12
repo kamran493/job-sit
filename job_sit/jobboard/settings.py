@@ -55,7 +55,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'jobboard.urls'
+ROOT_URLCONF = 'job_sit.urls'
 
 TEMPLATES = [
     {
@@ -72,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'jobboard.wsgi.application'
+WSGI_APPLICATION = 'job_sit.wsgi.application'
 
 
 # Database
@@ -135,7 +135,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'jobsit',
+        'NAME': 'job_sit',
         'USER': 'kamran493',
         'PASSWORD': 'X7lAqfabdCzBOdKLlmUnXHxYI30c53Af',
         'HOST': 'dpg-d0cottumcj7s73apvsl0-a.oregon-postgres.render.com',
