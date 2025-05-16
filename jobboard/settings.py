@@ -55,16 +55,17 @@ if DATABASE_URL:
         'default': dj_database_url.config(default=DATABASE_URL, conn_max_age=600, ssl_require=True)
     }
 else:
- DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'jobboard',  # نام پایگاه داده صحیح
-        'USER': 'kamran493',  # نام کاربری صحیح
-        'PASSWORD': 'X71AqfabdCzB0dKLlmUnXHxY130c53Af',  # رمز عبور صحیح
-       'HOST':'dpg-d0cottumcj7s73apvsl0-a'
-        'PORT': '5432',  # پورت صحیح
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'jobsit',  # نام پایگاه داده صحیح
+            'USER': 'kamran493',  # نام کاربری صحیح
+            'PASSWORD': 'X71AqfabdCzB0dKLlmUnXHxY130c53Af',  # رمز عبور صحیح
+            'HOST': 'dpg-d0cottumcj7s73apvsl0-a',  # نام هاست صحیح
+            'PORT': '5432'  # پورت صحیح
+        }
     }
-}
+
 
 # تنظیمات احراز هویت
 AUTH_PASSWORD_VALIDATORS = [
