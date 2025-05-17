@@ -11,7 +11,7 @@ DEBUG = os.getenv('DEBUG', 'True') == 'True'  # مقدار از محیط خوا�
 
 # تنظیمات هاست‌های مجاز
 ALLOWED_HOSTS = [
-    "jobboard-xdzg.onrender.com",  # آدرس سایت در Render
+    "job-sit.onrender.com",  # آدرس سایت در Render
     "127.0.0.1",  # برای تست محلی
     "localhost",  # برای تست محلی
 ]
